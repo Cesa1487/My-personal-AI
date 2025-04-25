@@ -31,6 +31,13 @@ if __name__ == "__main__":
     query = input(">> ")
 
     matches = get_best_match(query, memory, top_k=1)
+    risposta, score = matches[0]
 
-    print("\nRisposta più pertinente trovata:")
-    print(f"🧠 {matches[0][0]}  (similarità: {matches[0][1]:.2f})")
+    # Soglia di confidenza
+    SOGLIA = 0.60
+
+    if score < SOGLIA:
+        print("\n🤖 Non ho ancora imparato nulla che mi permetta di rispondere bene a questa domanda.")
+        print(f"(Similarità rilevata: {score:.2f})")
+    else:
+        print(f"\n🧠 {risposta}  (similarità: {score:.2f})")
