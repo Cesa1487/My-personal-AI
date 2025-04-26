@@ -34,7 +34,7 @@ if __name__ == "__main__":
     risposta, score = matches[0]
 
     # Soglia di confidenza
-    SOGLIA = 0.60
+    SOGLIA = 0.50
 
     if score < SOGLIA:
         print("\n🤖 Non ho ancora imparato nulla che mi permetta di rispondere bene a questa domanda.")
