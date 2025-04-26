@@ -1,0 +1,28 @@
+# TODO - My Personal AI
+
+Elenco dei miglioramenti futuri pianificati per evolvere la mia IA personale.
+
+---
+
+## 🧠 Apprendimento Incrementale
+- Permettere alla IA di aggiungere nuove frasi alla memoria direttamente durante l'interazione.
+
+## 💬 Risposte Composte
+- Restituire risposte combinate usando le top 2-3 frasi più simili per aumentare la ricchezza delle risposte.
+
+## 🎛️ Miglioramento dell’Interfaccia
+- Creare un semplice menù CLI (Command Line Interface).
+- Opzione futura: mini webapp con Streamlit.
+
+## 🗂️ Categorizzazione dei Concetti
+- Associare ogni frase a una categoria (allenamento, nutrizione, motivazione, tecnica).
+- Visualizzare la categoria nelle risposte.
+
+## 🛡️ Controlli di Sicurezza
+- Richiedere conferma prima di salvare nuove frasi.
+- Tenere traccia delle modifiche con un file di log delle nuove frasi aggiunte.
+
+---
+
+## 📌 Note
+Questi miglioramenti sono modulari e saranno implementati gradualmente, uno alla volta, mantenendo il progetto stabile e funzionale ad ogni versione.
