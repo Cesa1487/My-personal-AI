@@ -1,5 +1,10 @@
 ## 📌 Versione attuale
 
+#### v1.2
+- Implementate risposte composte: ora la IA combina 2-3 frasi più pertinenti per ogni domanda.
+- Applicato filtro di similarità minima (0.50) anche alle risposte composte, per garantire pertinenza.
+- Le risposte ora sono più articolate e ricche rispetto alla versione precedente.
+
 #### v1.1.1
 - Modificata la soglia di similarità da 0.60 a 0.50 per aumentare la frequenza delle risposte.
 - Migliorata l'esperienza d'uso su dataset di dimensioni contenute.
