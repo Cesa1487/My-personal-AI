@@ -39,16 +39,40 @@ def build_composed_response(matches):
 
 
 # Test se eseguito direttamente
+
+def show_menu():
+    """
+    Mostra il menù iniziale e restituisce la scelta dell'utente.
+    """
+    print("\n Benvenuto nella tua IA personale!")
+    print("Cosa vuoi fare?\n")
+    print("[1] Fai una domanda")
+    print("[2] Aggiungi una nuova frase alla memoria")
+    print("[3] Esci")
+
+    scelta = input(">> Inserisci il numero dell'opzione: ").strip()
+    return scelta
+
 if __name__ == "__main__":
-    print("Fai una domanda alla tua IA:")
-    query = input(">> ")
+    while True:
+        scelta = show_menu()
 
-    matches = get_best_matches(query, memory, top_k=3)
+        if scelta == "1":
+            query = input("\nScrivi la tua domanda: ")
+            matches = get_best_matches(query, memory, top_k=3)
 
-    SOGLIA = 0.50
+            SOGLIA = 0.50
+            matches_filtrati = [m for m in matches if m[1] >= SOGLIA]
 
-    matches_filtrati = [m for m in matches if m[1] >= SOGLIA]
+            risposta = build_composed_response(matches_filtrati)
+            print("\n" + risposta)
 
-    risposta_composta = build_composed_response(matches_filtrati)
+        elif scelta == "2":
+            print("⚠️ Funzionalità in sviluppo: aggiunta dinamica delle frasi non ancora attiva.")
 
-    print("\n" + risposta_composta)
+        elif scelta == "3":
+            print("👋 Ciao! Alla prossima.")
+            break
+
+        else:
+            print("❌ Scelta non valida. Inserisci 1, 2 o 3.")
