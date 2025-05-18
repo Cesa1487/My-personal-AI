@@ -1,5 +1,12 @@
 ## 📌 Versione attuale
 
+Il progetto è aperto a future evoluzioni.
+
+## v1.3
+- Aggiunto un menù interattivo in stile CLI.
+- L’utente può scegliere se fare una domanda, aggiungere frasi (funzione in sviluppo) o uscire.
+- L'interfaccia è ora più fluida, riutilizzabile e pronta per estensioni future.
+  
 #### v1.2
 - Implementate risposte composte: ora la IA combina 2-3 frasi più pertinenti per ogni domanda.
 - Applicato filtro di similarità minima (0.50) anche alle risposte composte, per garantire pertinenza.
